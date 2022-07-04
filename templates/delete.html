@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block header %}
+    <h1>削除画面</h1>
+{% endblock header %}
+
+{% block content %}
+    <form action="" method="post">{% csrf_token %}
+        <p>本当に"{{object.title}}"を削除しますか？</p>
+        <input type="submit" value="削除する">
+    </form>
+{% endblock content %}
